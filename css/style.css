@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: white;
+  font-family: system-ui, sans-serif;
+  /* Ensures full height compatibility across devices */
+  min-height: 100dvh;
+  margin: 0;
+}
+
+#background {
+  background-image: url(../images/Ingredients.jpg);
+  background-size: 70rem ;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  /* margin: auto; */
+  /* opacity: .5;  wanted background-image to be transparent */
+}
+
+h1 {
+  color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+
+#gamePlay {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: .5rem solid red;
+  background-color: lightyellow;
+  width: 800px;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+#start {
+  height: 100px;
+  width: 300px;
+  font-size: 40px;
+  color: black;
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#cookie {
+  width: 480px;
+  height: 480px;
+  background-image: url("../images/PBCookie.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border-radius: 50%;
+  /* border: 0; */
+  font-size: 50px;
+  margin: auto;
+    
+}
+
+#cookieClicks {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+/* #cookie img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+} */
