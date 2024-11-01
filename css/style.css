@@ -15,7 +15,7 @@ body {
   /*Read a few MDN articles */
   background: center / cover no-repeat url(../images/Ingredients.jpg);
 
-  background-size: 2000px 1000px;
+  background-size: 100% 150%;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -33,16 +33,18 @@ h1 {
   font-weight: 800;
   display: flex;
   /* justify-content: center; */
-  align-self: center; 
+  align-self: center;
   font-size: 70px;
-  /* margin: 140px; */
+  margin-top: 90px;
+  text-shadow: 5px 3px 2px black;
+  padding: 15px;
 }
 
 #gamePlay {
   color: black;
   display: flex;
-   justify-content: center;
-   align-self: center; 
+  justify-content: center;
+  align-self: center;
   font-size: 30px;
   border: 0.5rem solid red;
   background-color: lightyellow;
@@ -59,8 +61,8 @@ h1 {
   color: black;
   background-color: chocolate;
   display: flex;
-   /* justify-content: center; */
-  align-self: center; 
+  /* justify-content: center; */
+  align-self: center;
   /* margin: auto;
   margin-top: 100px; */
   cursor: pointer;
@@ -74,22 +76,23 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  display: flex;
+  align-self: center;
+  justify-content: center;
   border-radius: 100%;
   border: none;
   font-size: 50px;
   margin: 0;
   outline: none;
   cursor: pointer;
-  display: flex;
-  align-self: center;
 }
 
-/* #cookie:hover {
-    
-} */
+ #chocCookie {
+    height: 40px;
+    width: fit-content;
+    text-decoration: dashed;
+
+} 
 
 #cookieClicks {
   display: flex;
@@ -100,10 +103,14 @@ h1 {
 }
 
 #achieve {
-    display: flex;
-    align-self: flex-end;
-    background-color: white;
-    color: black;
+  display: flex;
+  align-self: last baseline;
+  /* background-image: url("../images/crumbs.jpeg"); */
+  background-color: white;
+  color: purple;
+  box-shadow: black 8px 6px;
+  text-shadow: 3px 2px 2px black;
+  font-weight: 700;
 }
 
 /* #cookie img {

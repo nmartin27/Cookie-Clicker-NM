@@ -28,6 +28,7 @@ cookie.addEventListener("click", () => {
   cookieClicks.innerHTML = `You have ${cookieClicked} cookie(s)!`;
   console.log("clicked");
   incrementClicks(click);
+  welcome.style.display ='none'
   // cookieClicks.appendChild(cookie); Made 'cookie' a parent outside of 'cookieClicks'
   if (cookieClicked === 11  || cookieClicked === 101) {
     achieve.textContent = 'You got the hang of this!';
@@ -35,6 +36,7 @@ cookie.addEventListener("click", () => {
   } else if (cookieClicked === 51) {
        achieve.textContent = 'Clickin phenom!';
        achieve.style.display = 'block';
+       chocCookie.style.display ='block';
   } else if (cookieClicked !== 11 ) {
     achieve.style.display = 'none';
   }
@@ -44,6 +46,10 @@ function incrementClicks(click) {
   cookieClicked += 1;
 };
 
+if (chocCookie.addEventListener("click", () => {
+  cookie.style.backgroundImage = "url('../images/CCcookie.png')";
+  chocCookie.style.display = 'none'
+}))
 
 // ===========DOM Manipulants ========
 
@@ -51,3 +57,4 @@ cookie.style.display = "none";
 achieve.style.display = 'none';
 achieve.style.borderStyle = 'outset'; 
 achieve.style.fontSize = '40px'
+chocCookie.style.display ='none'
