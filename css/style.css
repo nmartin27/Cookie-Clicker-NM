@@ -3,80 +3,107 @@
 }
 
 body {
-  background-color: white;
+  /* background-color: white; */
   color: white;
   font-family: system-ui, sans-serif;
   /* Ensures full height compatibility across devices */
   min-height: 100dvh;
-  margin: 0;
+  /* margin: 200px; */
 }
 
 #background {
-  background-image: url(../images/Ingredients.jpg);
-  background-size: 70rem ;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-  /* margin: auto; */
+  /*Read a few MDN articles */
+  background: center / cover no-repeat url(../images/Ingredients.jpg);
+
+  background-size: 2000px 1000px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-content: center;
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 50%;  */
+
+  /* background-attachment: fixed; */
+  /* margin: 0; */
   /* opacity: .5;  wanted background-image to be transparent */
 }
 
 h1 {
   color: darkmagenta;
+  font-weight: 800;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  align-self: center; 
   font-size: 70px;
+  /* margin: 140px; */
 }
 
 #gamePlay {
   color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+   align-self: center; 
   font-size: 30px;
-  border: .5rem solid red;
+  border: 0.5rem solid red;
   background-color: lightyellow;
   width: 800px;
   height: 200px;
-  margin: auto;
-  padding: 20px;
+  margin: 90px;
+  padding: 30px;
 }
 
 #start {
-  height: 100px;
-  width: 300px;
+  height: 80px;
+  width: 260px;
   font-size: 40px;
   color: black;
   background-color: chocolate;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 100px;
+   /* justify-content: center; */
+  align-self: center; 
+  /* margin: auto;
+  margin-top: 100px; */
+  cursor: pointer;
+  padding: 14px;
 }
 
 #cookie {
   width: 480px;
   height: 480px;
   background-image: url("../images/PBCookie.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  border-radius: 50%;
-  /* border: 0; */
+  border-radius: 100%;
+  border: none;
   font-size: 50px;
-  margin: auto;
-    
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
 }
+
+/* #cookie:hover {
+    
+} */
 
 #cookieClicks {
   display: flex;
-  align-content: center;
+  /* align-content: center; */
   justify-content: center;
   font-size: 50px;
+  margin: 0;
+}
+
+#achieve {
+    display: flex;
+    align-self: flex-end;
+    background-color: white;
+    color: black;
 }
 
 /* #cookie img {
