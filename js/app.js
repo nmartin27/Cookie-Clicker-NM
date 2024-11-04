@@ -38,7 +38,6 @@ startButton.addEventListener("click", () => {
   // achieve.style.display = "block";
   welcome.style.display = "none";
   subTitle.style.display = "none";
-
 });
 
 cookie.addEventListener("click", () => {
@@ -60,7 +59,6 @@ cookie.addEventListener("click", () => {
       }, 3000);
     }
     fadeOut();
-
   } else if (cookieClicked === 31) {
     achieve.textContent = "Clickin phenom!";
     achieve.style.display = "block";
@@ -71,7 +69,6 @@ cookie.addEventListener("click", () => {
       }, 3000);
     }
     fadeOut();
-
   } else if (cookieClicked === 36 || cookieClicked === 86) {
     egg.style.display = "block";
     function fadeOut() {
@@ -81,47 +78,38 @@ cookie.addEventListener("click", () => {
       }, 2000);
     }
     fadeOut();
-
   } else if (cookieClicked === 46 || cookieClicked === 96) {
     flour.style.display = "block";
     function fadeOut() {
-      
       setTimeout(() => {
         flour.style.display = "none";
       }, 2000);
     }
     fadeOut();
-
   } else if (cookieClicked === 56 || cookieClicked === 106) {
     butter.style.display = "block";
     function fadeOut() {
-      
       setTimeout(() => {
         butter.style.display = "none";
       }, 2000);
     }
     fadeOut();
-
   } else if (cookieClicked === 66 || cookieClicked === 116) {
     bakingSoda.style.display = "block";
     function fadeOut() {
-      
       setTimeout(() => {
         bakingSoda.style.display = "none";
       }, 2000);
     }
     fadeOut();
-
   } else if (cookieClicked === 76 || cookieClicked === 126) {
     sugar.style.display = "block";
     function fadeOut() {
-      
       setTimeout(() => {
         sugar.style.display = "none";
       }, 2000);
     }
     fadeOut();
-
   } else if (cookieClicked === 101) {
     achieve.textContent = "You are pretty good!";
     achieve.style.display = "block";
@@ -132,13 +120,17 @@ cookie.addEventListener("click", () => {
       }, 3000);
     }
     fadeOut();
-  
+
     // had as whole click fucntion inside and did not work === asked Chat for syntax
-  } else if (eggClicked && flourClicked && sugarClicked && bakingSodaClicked && butterClicked) {
+  } else if (
+    eggClicked &&
+    flourClicked &&
+    sugarClicked &&
+    bakingSodaClicked &&
+    butterClicked
+  ) {
     chocCookie.style.display = "block"; //Make upgrade more difficult than 30 clicks
-
-}
-
+  }
 });
 
 function incrementClicks(click) {
@@ -170,18 +162,12 @@ flour.addEventListener("click", () => {
   flour2.style.display = "block";
   ingrediantsContainer.style.display = "block";
   ingrediantsTitle.style.display = "block";
-
-  // ingrediantsContainer.style.backgroundImage = "url('../images/egg.png')",
-  // "url('../images/flour.png')";
-
-  // flour.style.backgroundSize = "contain";
-  // ingrediantsContainer.style.backgroundSize = "60%";
 });
 sugar.addEventListener("click", () => {
   sugarClicked = true;
   sugar.style.display = "none";
   sugar2.style.display = "block";
-  ingrediantsContainer.style.display = "block"; 
+  ingrediantsContainer.style.display = "block";
   ingrediantsTitle.style.display = "block";
 
   // ingrediantsContainer.style.backgroundImage = "url('../images/sugar.png')";
@@ -194,7 +180,7 @@ bakingSoda.addEventListener("click", () => {
   bakingSoda2.style.display = "block";
   ingrediantsContainer.style.display = "block";
   ingrediantsTitle.style.display = "block";
-  
+
   // ingrediantsContainer.style.backgroundImage = "url('../images/bakingSoda.png')";
   // bakingSoda.style.backgroundSize = "contain";
   // ingrediantsContainer.style.backgroundSize = "20%";
@@ -223,5 +209,4 @@ bakingSoda2.style.display = "none";
 butter2.style.display = "none";
 sugar2.style.display = "none";
 ingrediantsContainer.style.display = "none";
-ingrediantsTitle.style.display = "none"
-
+ingrediantsTitle.style.display = "none";
