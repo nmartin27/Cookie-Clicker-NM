@@ -14,12 +14,14 @@ body {
 #background {
   /*Read a few MDN articles */
   background: center / cover no-repeat url(../images/Ingredients.jpg);
-
   background-size: 100% 150%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  /* align-content: center; */
   /* justify-content: center; */
-  align-content: center;
+  /* align-items: center; */
+  /* align-self: center; */
   /* background-repeat: no-repeat; */
   /* background-position: 50% 50%;  */
 
@@ -32,8 +34,8 @@ h1 {
   color: darkmagenta;
   font-weight: 800;
   display: flex;
-  /* justify-content: center; */
-  align-self: center;
+  justify-content: center;
+  /* align-items: center; */
   font-size: 70px;
   margin-top: 90px;
   text-shadow: 5px 3px 2px black;
@@ -44,13 +46,15 @@ h1 {
   color: black;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  /* align-self: center; */
+  /* align-content: center; */
   font-size: 30px;
   border: 0.5rem solid red;
   background-color: lightyellow;
   width: 800px;
   height: 200px;
-  margin: 90px;
+  margin: auto;
   padding: 30px;
 }
 
@@ -61,10 +65,12 @@ h1 {
   color: black;
   background-color: chocolate;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-self: center;
-  /* margin: auto;
-  margin-top: 100px; */
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
   cursor: pointer;
   padding: 14px;
 }
@@ -76,41 +82,239 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: fixed;
   display: flex;
-  align-self: center;
-  justify-content: center;
+  /* align-self: center; */
+  /* align-content: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
   border-radius: 100%;
   border: none;
   font-size: 50px;
-  margin: 0;
+  margin-left: 750px;
   outline: none;
   cursor: pointer;
 }
 
- #chocCookie {
-    height: 40px;
-    width: fit-content;
-    text-decoration: dashed;
+#chocCookie {
+  height: fit-content;
+  width: 500px;
+  font-size: 40px;
+  /* color: white; */
+  background-image: url(../images/CCcookie.png);
+  background-position: end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-self: flex-end;
+  padding-left: 65px;
+  cursor: pointer;
+  position: fixed;
+}
 
-} 
+button[type="upgrade"]:hover {
+  color: white;
+}
 
 #cookieClicks {
   display: flex;
   /* align-content: center; */
-  justify-content: center;
+  /* justify-content: center; */
+  align-self:center;
   font-size: 50px;
-  margin: 0;
+  margin-left: 1300px;
+  position: fixed;
 }
 
 #achieve {
   display: flex;
-  align-self: last baseline;
+  align-self: center;
+  order: 3;
+  margin-top: 200px;
   /* background-image: url("../images/crumbs.jpeg"); */
   background-color: white;
   color: purple;
   box-shadow: black 8px 6px;
   text-shadow: 3px 2px 2px black;
   font-weight: 700;
+  opacity: 1;
+  transition: opacity 6s ease-in-out;
+  height: fit-content;
+  width: fit-content;
+  position: fixed;
+  margin-left: 1300px;
+}
+
+.fade {
+  opacity: 0;
+}
+
+#ingrediantsContainer {
+  border: 2px dashed black;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  align-self: flex-start;
+  /* background-repeat: no-repeat; */
+  flex-direction: row;
+  /* align-items: baseline; */
+  /* float: left; */
+  /* flex-flow: wrap-reverse; */
+  position: fixed;
+  margin-top: 50px;
+}
+
+#ingrediantsTitle {
+  font-size: 30px;
+  color: white;
+  position: fixed;
+  margin: 0;
+}
+
+.ingrediants {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+  display: grid; /* grid? */
+
+  flex-direction: column;
+  /* align-items: center; */
+  /* display: grid; */
+  /* justify-content: space-around; */
+}
+
+#butter {
+  background-image: url("../images/butter.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0;
+  /* display: flex; */
+  /* row-gap: 60px; */
+  /* column-gap: 60px; */
+  /* margin: 100px; */
+  grid-column: 1 / 4;
+  grid-row: 3 / 5;
+}
+#butter2 {
+  background-image: url("../images/butter.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+
+  /* grid-column: 1 / 1; */
+  /* grid-row: 1 / 1; */
+}
+
+#egg {
+  background-image: url("../images/egg.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  /* row-gap: 60px; */
+  /* column-gap: 60px; */
+  /* margin-left: 100px; */
+  grid-column: 4 / 2;
+  grid-row: 2 / 2;
+}
+#egg2 {
+  background-image: url("../images/egg.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+
+  /* grid-column: 2 / 2; */
+  /* grid-row: 2 / 2; */
+}
+
+#flour {
+  background-image: url("../images/flour.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  /* row-gap: 60px; */
+  /* column-gap: 60px; */
+  /* margin-top: 10px; */
+  /* margin-left: auto; */
+  grid-column: 4 / 3;
+  grid-row: 5 / 3;
+}
+#flour2 {
+  background-image: url("../images/flour.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  /* grid-column: 2 / 3; */
+  /* grid-row: 5 / 3; */
+}
+
+#bakingSoda {
+  background-image: url("../images/bakingSoda.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  /* row-gap: 60px; */
+  /* column-gap: 60px; */
+  /* margin: 100px; */
+  grid-column: 5 / 4;
+  grid-row: 5 / 5;
+}
+#bakingSoda2 {
+  background-image: url("../images/bakingSoda.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  /* grid-column: 5 / 4; */
+  /* grid-row: 5 / 5; */
+}
+
+#sugar {
+  background-image: url("../images/sugar.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  /* row-gap: 60px; */
+  /* column-gap: 60px; */
+  /* margin: 100px; */
+  grid-column: 5 / 5;
+  grid-row: 5 / 5;
+}
+#sugar2 {
+  background-image: url("../images/sugar.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+
+  /* grid-column: 5 / 5; */
+  /* grid-row: 5 / 5; */
 }
 
 /* #cookie img {
