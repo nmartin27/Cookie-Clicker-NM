@@ -37,6 +37,7 @@ startButton.addEventListener("click", () => {
   background.style.backgroundImage = "url('../images/backgroundCookie.jpg')";
   // achieve.style.display = "block";
   welcome.style.display = "none";
+  subTitle.style.display = "none";
 
 });
 
@@ -44,6 +45,8 @@ cookie.addEventListener("click", () => {
   cookieClicks.innerHTML = `You have ${cookieClicked} cookie(s)!`;
   console.log("clicked");
   incrementClicks(click);
+  chocCookie.style.display = "none";
+
   // cookieClicks.appendChild(cookie); Made 'cookie' a parent outside of 'cookieClicks'
   if (cookieClicked === 11) {
     achieve.textContent = "You got the hang of this!";
@@ -130,6 +133,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   
+    // had as whole click fucntion inside and did not work === asked Chat for syntax
   } else if (eggClicked && flourClicked && sugarClicked && bakingSodaClicked && butterClicked) {
     chocCookie.style.display = "block"; //Make upgrade more difficult than 30 clicks
 
