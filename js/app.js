@@ -47,6 +47,10 @@ cookie.addEventListener("click", () => {
   chocCookie.style.display = "none";
 
   // cookieClicks.appendChild(cookie); Made 'cookie' a parent outside of 'cookieClicks'
+  function incrementClicks(click) {
+    cookieClicked += 1;
+  };
+  
   if (cookieClicked === 11) {
     achieve.textContent = "You got the hang of this!";
     achieve.style.display = "block";
@@ -70,6 +74,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   } else if (cookieClicked === 36 || cookieClicked === 86) {
+    chocCookie.style.display = "none";
     egg.style.display = "block";
     function fadeOut() {
       // egg.classList.add("fade");
@@ -79,6 +84,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   } else if (cookieClicked === 46 || cookieClicked === 96) {
+    chocCookie.style.display = "none";
     flour.style.display = "block";
     function fadeOut() {
       setTimeout(() => {
@@ -87,6 +93,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   } else if (cookieClicked === 56 || cookieClicked === 106) {
+    chocCookie.style.display = "none";
     butter.style.display = "block";
     function fadeOut() {
       setTimeout(() => {
@@ -95,6 +102,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   } else if (cookieClicked === 66 || cookieClicked === 116) {
+    chocCookie.style.display = "none";
     bakingSoda.style.display = "block";
     function fadeOut() {
       setTimeout(() => {
@@ -103,6 +111,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   } else if (cookieClicked === 76 || cookieClicked === 126) {
+    chocCookie.style.display = "none";
     sugar.style.display = "block";
     function fadeOut() {
       setTimeout(() => {
@@ -111,6 +120,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
   } else if (cookieClicked === 101) {
+    chocCookie.style.display = "none";
     achieve.textContent = "You are pretty good!";
     achieve.style.display = "block";
     function fadeOut() {
@@ -121,7 +131,7 @@ cookie.addEventListener("click", () => {
     }
     fadeOut();
 
-    // had as whole click fucntion inside and did not work === asked Chat for syntax
+    // had as whole click fucntion inside and did not work ==== asked Chat for syntax
   } else if (
     eggClicked &&
     flourClicked &&
@@ -130,19 +140,29 @@ cookie.addEventListener("click", () => {
     butterClicked
   ) {
     chocCookie.style.display = "block"; //Make upgrade more difficult than 30 clicks
+    
   }
 });
 
-function incrementClicks(click) {
-  cookieClicked += 1;
-}
+// if (
+//   eggClicked &&
+//     flourClicked &&
+//     sugarClicked &&
+//     bakingSodaClicked &&
+//     butterClicked )
+//     { else if (cookieClicked === 50) {
+//     chocCookie.style.display = "block"; //Make upgrade more difficult than 30 clicks
+//   }
+//   };
 
-if (
   chocCookie.addEventListener("click", () => {
+    cookieClicks.innerHTML = `You have ${cookieClicked -= 30} cookie(s)!`;
+    // cookieClicked -= 30;
     cookie.style.backgroundImage = "url('../images/CCcookie.png')";
     chocCookie.style.display = "none";
     ingrediantsContainer.style.display = "none";
-  })
+    
+  }
 );
 
 egg.addEventListener("click", () => {
