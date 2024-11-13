@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+
 // ========Constants========
 
 const cookie = document.querySelector("#cookie");
