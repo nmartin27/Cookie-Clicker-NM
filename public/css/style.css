@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -18,7 +17,7 @@ body {
 
 #background {
   /*Read a few MDN articles */
-  background: center / cover no-repeat url(../images/Ingredients.jpg);
+  background: center / cover no-repeat url("../images/Ingredients.jpg");
   background-size: 100% 150%;
   height: 100vh;
   display: flex;
